@@ -1072,7 +1072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5432642508021034216}
   m_Layer: 0
-  m_Name: Swing
+  m_Name: SwingOnePair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
