@@ -1624,7 +1624,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dwarf_2 desc
+          m_StringArgument: Dwarf2_desc
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &614741048
@@ -4071,7 +4071,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dwarf_3 desc
+          m_StringArgument: Dwarf3_desc
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1536920987
@@ -4230,7 +4230,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dwarf_1 desc
+          m_StringArgument: Dwarf1_desc
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1568641526
@@ -4675,7 +4675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dwarf4_decs
+  m_text: Dwarf4_desc
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
