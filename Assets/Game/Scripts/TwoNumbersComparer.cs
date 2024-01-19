@@ -8,21 +8,26 @@ public class TwoNumbersComparer : MonoBehaviour {
 
     public void OnCompareButton() {
         if (_inputFieldFirstValue.text == "") {
-            _inputFieldResultValue.text = "First value empty!";
+            _inputFieldResultValue.text = "First value bad!";
             return;
         }
         if (_inputFieldSecondValue.text == "") {
-            _inputFieldResultValue.text = "Second value empty!";
+            _inputFieldResultValue.text = "Second value bad!";
             return;
         }
-        double firstValue = double.Parse(_inputFieldFirstValue.text);
-        double secondValue = double.Parse(_inputFieldSecondValue.text);
-        if (firstValue > secondValue) {
-            _inputFieldResultValue.text = _inputFieldFirstValue.text;
-        } else if (secondValue > firstValue) {
-            _inputFieldResultValue.text = _inputFieldSecondValue.text;
+        if (double.TryParse(_inputFieldFirstValue.text, out double firstValue) && 
+            double.TryParse(_inputFieldSecondValue.text, out double secondValue)) {
+            if (firstValue > secondValue) {
+                _inputFieldResultValue.text = _inputFieldFirstValue.text;
+            }
+            else if (secondValue > firstValue) {
+                _inputFieldResultValue.text = _inputFieldSecondValue.text;
+            }
+            else {
+                _inputFieldResultValue.text = "Equals!";
+            }
         } else {
-            _inputFieldResultValue.text = "Equals!";
+            _inputFieldResultValue.text = "Bad numbers!";
         }
     }
 }
